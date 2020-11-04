@@ -56,7 +56,7 @@ sudo gdebi rstudio-server-1.3.1093-amd64.deb
 
 # Launch R Studio 
 
-paste this in your web browser and eplace *<server_id>* with the IP adress of your server. 
+paste this in your web browser and replace *<server_id>* with the IP adress of your server. 
 
 ```{bash, eval=FALSE}
 http://<server_id>:8787
@@ -81,8 +81,13 @@ Your IP adress will be located after the second **inet** and will most likely be
     inet6 fe80::25d8:a074:3cd9:ceae/64 scope link noprefixroute 
        valid_lft forever preferred_lft forever
 ```
+So I would type the following in my web browser : http://123.456.78.910:8787
+
+You will be redirecte to a page asking you for you username and password, and this are the same you use to connect yo rou server. 
 
 # Download library and packages in R Studio 
+
+Write the following in the **terminal** of your R studio page (not to R console)
 
 ```{bash, eval=FALSE}
 sudo apt install build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
