@@ -1,8 +1,8 @@
-Step by step to help you download R and R Studio on Ubuntu server 18 and over using the command line. 
+Step by step to help you download R and R Studio on Ubuntu server 18 using the command line
 
 # Install R base
 
-You need to add this line in your **/etc/apt/sources.list** file.
+You need to add this line in your **/etc/apt/sources.list** file
 
 ```{bash, eval=FALSE,}
 deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/
