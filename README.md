@@ -1,12 +1,4 @@
-# R-studio-Server
-How to download R and R Studio on Ubuntu server 18 and over 
-
----
-title: "Install R on Ubuntu server Bionic 18 or higher"
-author: "Karine Villeneuve"
-date: "03/11/2020"
-output: html_document
----
+Step by step to help you download R and R Studio on Ubuntu server 18 and over using the command line. 
 
 # Install R base
 
@@ -72,23 +64,23 @@ http://<server_id>:8787
 
 **To get the IP adress of your server**
 
+Your IP adress will be located after the second **inet** and will most likely be in this format **123.456.78.910**
+
 ```{bash, eval=FALSE}
 > ip addr show
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    inet 127.0.0.1/8 scope host lo
+    inet 123.4.5.6/7 scope host lo
        valid_lft forever preferred_lft forever
     inet6 ::1/128 scope host 
        valid_lft forever preferred_lft forever
 2: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
     link/ether a8:5e:45:69:65:d1 brd ff:ff:ff:ff:ff:ff
-    inet 132.208.64.213/26 brd 132.208.64.255 scope global dynamic noprefixroute eno1
+    inet 123.456.78.910/26 brd 132.208.64.255 scope global dynamic noprefixroute eno1
        valid_lft 396949sec preferred_lft 396949sec
     inet6 fe80::25d8:a074:3cd9:ceae/64 scope link noprefixroute 
        valid_lft forever preferred_lft forever
 ```
-
-*The address IP adress is > inet 132.208.64.213*
 
 # Download library and packages in R Studio 
 
