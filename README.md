@@ -81,13 +81,13 @@ Your IP adress will be located after the second **inet** and will most likely be
     inet6 fe80::25d8:a074:3cd9:ceae/64 scope link noprefixroute 
        valid_lft forever preferred_lft forever
 ```
-So I would type the following in my web browser : http://123.456.78.910:8787
+For exemple, I would type the following in my web browser : http://123.456.78.910:8787
 
-You will be redirecte to a page asking you for you username and password, and this are the same you use to connect yo rou server. 
+You will be redirecte to a page asking you for you username and password (these are the same you use to connect yo rou server)
 
 # Download library and packages in R Studio 
 
-Write the following in the **terminal** of your R studio page (not to R console)
+Write the following in the **terminal** of your R studio page (not the R console)
 
 ```{bash, eval=FALSE}
 sudo apt install build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
