@@ -64,26 +64,20 @@ http://<server_id>:8787
 
 **To get the IP adress of your server**
 
-Your IP adress will be located after the second **inet** and will most likely be in this format **123.456.78.910**
-
 ```{bash, eval=FALSE}
-> ip addr show
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    inet 123.4.5.6/7 scope host lo
-       valid_lft forever preferred_lft forever
-    inet6 ::1/128 scope host 
-       valid_lft forever preferred_lft forever
-2: eno1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
-    link/ether a8:5e:45:69:65:d1 brd ff:ff:ff:ff:ff:ff
-    inet 123.456.78.910/26 brd 132.208.64.255 scope global dynamic noprefixroute eno1
-       valid_lft 396949sec preferred_lft 396949sec
-    inet6 fe80::25d8:a074:3cd9:ceae/64 scope link noprefixroute 
-       valid_lft forever preferred_lft forever
+hostname -I
 ```
 For exemple, I would type the following in my web browser : http://123.456.78.910:8787
 
-You will be redirecte to a page asking you for you username and password (these are the same you use to connect yo rou server)
+You will be redirected to a page asking you for you username and password (these are the same you use to log into your server)
+
+# Start, stop, and get the status of rstudio-server
+
+```{bash, eval=FALSE}
+sudo rstudio-server start
+sudo rstudio-server stop
+sudo rstudio-server status
+```
 
 # Troubles connecting to Rstudio throught your browser 
 
