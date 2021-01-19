@@ -85,6 +85,16 @@ For exemple, I would type the following in my web browser : http://123.456.78.91
 
 You will be redirecte to a page asking you for you username and password (these are the same you use to connect yo rou server)
 
+# Troubles connecting to Rstudio throught your browser 
+
+We couldn't connect with a browser because the port 8787 was blocked by a firewall. I removed this firewall with the following commands:
+
+```{bash, eval=FALSE}
+sudo firewall-cmd --permanent --zone=public --add-port=8787/tcp
+sudo firewall-cmd --reload
+sudo ufw allow 8787
+``` 
+
 # Download library and packages in R Studio 
 
 Write the following in the **terminal** of your R studio page (not the R console)
@@ -92,7 +102,6 @@ Write the following in the **terminal** of your R studio page (not the R console
 ```{bash, eval=FALSE}
 sudo apt install build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
 ```
-
 
 # References
 
